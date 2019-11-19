@@ -1,14 +1,37 @@
 .grey-background{
     background-color: #484848;
 }
+.white-background{
+    background-color: #fafafa;
+}
 
 .white-text, a{
     color:#fafafa;
+}
+.black-text{
+    color:#484848
+}
+.bold{
+    font-weight: 700;
+}
+.underline{
+    text-decoration: underline;
+}
+
+.padding{
+    padding:50px;
+}
+.padding-big{
+    padding: 60px;
 }
 
 .big-box{
     height:100vh;
     width:100vw;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .align-items-center{
     display: -webkit-flex;
@@ -18,9 +41,54 @@
 }
 
 .flex-around{
+    justify-content: space-around;
+}
+.flex-between{
     justify-content: space-between;
 }
 
 .portfolio{
-    background-color: red;
+    background-color: #484848;
+}
+
+.hide{
+    transform: scale(0,1);
+    height: 0;
+    width: 0;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-fig{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+
+.screenshot{
+    width:100%;
+    height:auto;
+    box-sizing: border-box;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.screenshot:hover{
+    transform: scale(1.05,1.05);
+    opacity: 0.8;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.background-1{
+    background-image: url('../media/project-1-screenshot.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100% 100%; /* Resize the background image to cover the entire container */
+
 }
