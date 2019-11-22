@@ -1,21 +1,40 @@
-.grey-background{
-    background-color: #484848;
+body{
+    overflow-x: hidden;
+    background-color: #536872;
 }
-.white-background{
-    background-color: #fafafa;
+.underline{
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color:#000000
+}
+.grey-background{
+    background-color: #536872;
+}
+.light-background{
+    background-color: #c6e3e4 ;
+}
+.header-background{
+    background-color: #69685d ;
 }
 
 .white-text, a{
     color:#fafafa;
 }
-.black-text{
-    color:#484848
+.black-text, .black-text a{
+    color:#36454f
 }
+a:hover, .black-text a:hover{
+    color:#989898;
+    text-decoration:none;
+}
+
 .bold{
     font-weight: 700;
-}
-.underline{
-    text-decoration: underline;
 }
 
 .padding{
@@ -48,7 +67,12 @@
 }
 
 .portfolio{
-    background-color: #484848;
+    background-color: #536872 ;
+    transform-origin: left;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hide{
@@ -84,11 +108,4 @@
     -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.background-1{
-    background-image: url('../media/project-1-screenshot.jpg');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: 100% 100%; /* Resize the background image to cover the entire container */
-
 }

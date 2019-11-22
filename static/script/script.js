@@ -1,15 +1,21 @@
 $(document).ready(function () {
-    $("#about-me").hide(1000);
     $(".portfolio-button").click(function () {
         console.log("button pressed");
         $("#home").addClass("hide");
+        $("#about-me").addClass("hide");
         $("#portfolio").removeClass("hide");
         
     });
     $(".about-button").click(function () {
         console.log("button pressed")
         $("#home").addClass("hide");
-        $("#portfolio").hide(1000);
-        $("#about-me").show(1000);
+        $("#portfolio").addClass("hide");
+        $("#about-me").removeClass("hide");
+    });
+    $(".home-button").click(function () {
+        console.log("button pressed")
+        $("#home").removeClass("hide");
+        $("#portfolio").addClass("hide");
+        $("#about-me").addClass("hide");
     });
 });
